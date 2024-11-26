@@ -1,10 +1,11 @@
 import { JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 import dynamic from "next/dynamic";
+import { Toaster } from "@/components/ui/toaster";
 
 // Dynamically import components that aren't needed for initial render
 const Header = dynamic(() => import("@/components/Header"), {
-  ssr: true // Keep true if header is needed for SEO
+  ssr: true
 });
 const Footer = dynamic(() => import("@/components/Footer"), {
   ssr: true
@@ -12,10 +13,9 @@ const Footer = dynamic(() => import("@/components/Footer"), {
 
 const jetbrainsMono = JetBrains_Mono({
   subsets: ["latin"],
-  // Optimize font loading by only including weights you actually use
-  weights: [400, 500, 700], // Reduce number of weights
+  weights: [400, 500, 700],
   variable: '--font-jetbrainsMono',
-  display: 'swap', // Add display swap for better performance
+  display: 'swap',
 });
 
 export const metadata = {
@@ -30,6 +30,7 @@ export default function RootLayout({ children }) {
       <Header />
         {children}
       <Footer />
+      <Toaster />
       </body>
     </html>
   );
