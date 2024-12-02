@@ -22,13 +22,23 @@ const jetbrainsMono = JetBrains_Mono({
   display: 'swap',
 });
 
+export const viewport = {
+  themeColor: "#000000",
+  width: 'device-width',
+  initialScale: 1,
+  maximumScale: 1,
+  colorScheme: 'dark light',
+};
+
 export const metadata = {
   title: "Efosa Igbinehi | AI Software Engineer",
   description: "Professional portfolio showcasing AI and software engineering projects",
   manifest: "/manifest.json",
-  themeColor: "#000000",
-  viewport: "width=device-width, initial-scale=1, maximum-scale=1",
   robots: "index, follow",
+  icons: {
+    icon: '/assets/efosa_igbinehi.webp',
+    apple: '/assets/efosa_igbinehi.webp',
+  },
   openGraph: {
     type: 'website',
     locale: 'en_US',
@@ -36,11 +46,18 @@ export const metadata = {
     title: 'Efosa Igbinehi | AI Software Engineer',
     description: 'Professional portfolio showcasing AI and software engineering projects',
     siteName: 'Efosa Igbinehi Portfolio',
+    images: [{ 
+      url: '/assets/efosa_igbinehi.webp',
+      width: 192,
+      height: 192,
+      alt: 'Efosa Igbinehi'
+    }]
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Efosa Igbinehi | AI Software Engineer',
     description: 'Professional portfolio showcasing AI and software engineering projects',
+    images: ['/assets/efosa_igbinehi.webp']
   },
 };
 
@@ -48,9 +65,10 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" className={jetbrainsMono.variable}>
       <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
         <link rel="manifest" href="/manifest.json" />
-        <meta name="apple-mobile-web-app-capable" content="yes" />
-        <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+        <link rel="icon" type="image/webp" href="/assets/efosa_igbinehi.webp" sizes="192x192" />
+        <link rel="apple-touch-icon" href="/assets/efosa_igbinehi.webp" sizes="192x192" />
       </head>
       <body>
         <Suspense fallback={<div className="h-20 bg-background/80 backdrop-blur-sm" />}>

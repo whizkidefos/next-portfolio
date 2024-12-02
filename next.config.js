@@ -33,6 +33,15 @@ const nextConfig = {
   output: 'standalone',
   // Optimize fonts
   optimizeFonts: true,
+  // Page loading optimizations
+  pageExtensions: ['jsx', 'js'],
+  // Improved production performance
+  productionBrowserSourceMaps: false,
+  // Optimize loading performance
+  onDemandEntries: {
+    maxInactiveAge: 60 * 1000, // 1 minute
+    pagesBufferLength: 5,
+  },
 };
 
 // Analyze bundle sizes in production build
