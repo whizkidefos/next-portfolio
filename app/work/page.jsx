@@ -13,19 +13,19 @@ import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/comp
 const WordSliderButtons = lazy(() => import("@/components/WordSliderButtons"));
 
 // Optimize image loading
-const ProjectImage = ({ src, alt }) => (
-    <Image
-        src={src}
-        fill
-        sizes="(max-width: 640px) 100vw, 640px"
-        className="object-cover"
-        alt={alt}
-        loading="lazy"
-        quality={75} // Reduce quality slightly for better performance
-        placeholder="blur"
-        blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRg..." // Add appropriate blur data URL
-    />
-);
+// const ProjectImage = ({ src, alt }) => (
+//     <Image
+//         src={src}
+//         fill
+//         sizes="(max-width: 640px) 100vw, 640px"
+//         className="object-cover"
+//         alt={alt}
+//         loading="lazy"
+//         quality={75} // Reduce quality slightly for better performance
+//         placeholder="blur"
+//         blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRg..." // Add appropriate blur data URL
+//     />
+// );
 
 const projects = [
     {
@@ -151,7 +151,7 @@ const Work = () => {
 
                                         {/* Image */}
                                         <figure className="relative w-full h-full">
-                                            <ProjectImage
+                                            <Image
                                                 src={project.image}
                                                 fill
                                                 sizes="(min-width: 640px) 640px, 100vw"
