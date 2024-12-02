@@ -7,7 +7,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import 'swiper/css';
 
 import { BsArrowUpRight, BsGithub } from "react-icons/bs";
-import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/Tooltip";
+import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip";
 
 // Lazy load components
 const WordSliderButtons = lazy(() => import("@/components/WordSliderButtons"));
