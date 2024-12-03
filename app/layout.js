@@ -32,8 +32,8 @@ export const viewport = {
 
 export const metadata = {
   metadataBase: new URL('https://iefosa.me'),
-  title: "Efosa Igbinehi | Frontend Developer",
-  description: "Frontend Developer based in Lagos, Nigeria. I build responsive, accessible, and performant web applications.",
+  title: "Efosa Igbinehi | Software Engineer",
+  description: "Software Developer based in Manchester, United Kingdom. I build responsive, accessible, and performant web applications.",
   manifest: "/manifest.json",
   robots: "index, follow",
   icons: {
@@ -44,8 +44,8 @@ export const metadata = {
     type: 'website',
     locale: 'en_US',
     url: 'https://iefosa.me',
-    title: 'Efosa Igbinehi | Frontend Developer',
-    description: 'Frontend Developer based in Lagos, Nigeria. I build responsive, accessible, and performant web applications.',
+    title: 'Efosa Igbinehi | Software Engineer',
+    description: 'Software Developer based in Manchester, United Kingdom. I build responsive, accessible, and performant web applications.',
     siteName: 'Efosa Igbinehi Portfolio',
     images: [{ 
       url: '/assets/efosa_igbinehi.webp',
@@ -56,8 +56,8 @@ export const metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Efosa Igbinehi | Frontend Developer',
-    description: 'Frontend Developer based in Lagos, Nigeria. I build responsive, accessible, and performant web applications.',
+    title: 'Efosa Igbinehi | Software Engineer',
+    description: 'Software Developer based in Manchester, United Kingdom. I build responsive, accessible, and performant web applications.',
     images: ['/assets/efosa_igbinehi.webp']
   },
 };

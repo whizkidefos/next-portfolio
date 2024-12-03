@@ -2,7 +2,6 @@
 
 import { useState } from "react";
 
-import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { FiDownload } from "react-icons/fi";
 import Social from "@/components/Social";
@@ -45,7 +44,7 @@ export default function Home() {
         <div className="container mx-auto" h-full>
           <div className="flex flex-col items-center justify-between xl:flex-row xl:pt-8 xl:pb-24">
             <article className="order-2 text-center xl:text-left xl:order-none">
-              <span className="text-xl">AI Software Engineer</span>
+              <span className="text-xl">Software Engineer</span>
               <h1 className="mb-6 h1"><span className="text-accent">Efosa Igbinehi</span></h1>
               <p className="max-w-[500px] mb-9 text-white/80">
                 I excel at crafting elegant digital experiences and I am proficient in various programming languages and technologies. I am passionate about building software that is scalable, maintainable and user-friendly.
